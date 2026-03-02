@@ -1,0 +1,41 @@
+:root {
+    --pink: #E51177;
+    --pink-dark: #DD0F73;
+    --burgundy: #55062C;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    background-color: var(--pink);
+    color: white;
+    padding: 2rem;
+    text-align: center;
+}
+
+main {
+    padding: 1.5rem;
+}
+a {
+    color: var(--pink-dark);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--pink);
+}
+
+footer {
+    background-color: var(--burgundy);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    margin-top: 2rem;
+    font-size: 0.9rem;
+}
+
+
