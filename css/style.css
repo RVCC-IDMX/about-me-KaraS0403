@@ -37,5 +37,16 @@ footer {
     margin-top: 2rem;
     font-size: 0.9rem;
 }
+h2{
+    color: var(--pink-dark);
+    font-size: medium;
+    
+}
+
+#hobbies ul li:nth-child(1){
+    color:#55062C;
+    font-style: italic;
+    list-style: square;
+}
 
 
