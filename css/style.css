@@ -48,5 +48,14 @@ h2{
     font-style: italic;
     list-style: square;
 }
+figure
+{
+    text-align: center;
+    border: 5px solid #55062C;
+    padding: 1px;
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 25px;
+}
 
 
