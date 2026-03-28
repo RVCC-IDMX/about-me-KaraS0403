@@ -4,12 +4,14 @@
     --burgundy: #55062C;
 }
 
+/* Global */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background-color: #fff7fb; /* soft blush */
 }
 
-
+/* Header */
 header {
     background-color: var(--pink);
     color: white;
@@ -17,9 +19,12 @@ header {
     text-align: center;
 }
 
+/* Main */
 main {
     padding: 1.5rem;
 }
+
+/* Links */
 a {
     color: var(--pink-dark);
     text-decoration: none;
@@ -29,6 +34,7 @@ a:hover {
     color: var(--pink);
 }
 
+/* Footer */
 footer {
     background-color: var(--burgundy);
     color: white;
@@ -37,47 +43,61 @@ footer {
     margin-top: 2rem;
     font-size: 0.9rem;
 }
-h2{
+
+/* Headings */
+h2 {
     color: var(--pink-dark);
     font-size: medium;
-    
 }
 
-#hobbies ul li:nth-child(1){
-    color:#55062C;
-    font-style: italic;
-    list-style: square;
+/* Centering utility */
+.center {
+    text-align: center;
 }
-img{
+
+main section img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* First hobby styling */
+#hobbies ul{
+    list-style-position: inside;
+    padding: 0;
+    text-align: center;
+}
+
+/* Images */
+img {
     max-width: 100%;
     height: auto;
 }
-figure
-{
-    
+
+/* Figures */
+figure {
     text-align: center;
-    border: 5px solid #55062C;
+    border: 5px solid var(--burgundy);
     padding: 1px;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-top: 25px;
+    margin: 25px auto;
+    max-width: 600px;
 }
 
-article{
+/* Article block */
+article {
     background-color: var(--pink);
     padding: 1rem;
     border-radius: 1px;
     margin-bottom: 1.5rem;
     line-height: 1.25rem;
     font-family: 'Times New Roman', Times, serif;
-    div{
-        margin-bottom: 1rem;
-        color: white;
-    }
-    h2{
-        color: white;
-    }
-  
-
 }
 
+/* Article text + heading */
+article div {
+    margin-bottom: 1rem;
+    color: white;
+}
+
+article h2 {
+    color: white;
+}
