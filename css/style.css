@@ -166,3 +166,9 @@ section#article {
     max-width: 100rem;
     columns:20em
 }
+
+/*contact Form*/
+
+    #formElements{
+        display:grid;
+    }

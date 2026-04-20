@@ -86,6 +86,57 @@
                 <p>We kept on ascending, with occasional periods of quick descent, but in the main always ascending. Suddenly, I became conscious of the fact that the driver was in the act of pulling up the horses in the courtyard of a vast ruined castle, from whose tall black windows came no ray of light, and whose broken battlements showed a jagged line against the moonlit sky.</p>
             </div>
         </section>
+        <section id="contact">
+            <h2>Contact Information</h2>
+            <form id="contactForm" name="contactForm"method="post" data-netlify="true">
+                <fieldset>
+                    <legend>Contact Form</legend>
+
+                    <div id="formElements">
+                    <!--- Name --->
+                    <label for="name">Name(required)</label>
+                    <input type="text" id="name" name="name" required>
+                    <!--- Email --->
+                    <label for="email">Email(required)</label>
+                    <input type="email" id="email" name="email" required>
+                    
+                    <!--- Phone --->
+                    <label for="phone">Phone(optional)</label>
+                    <input type="tel" id="phone" name="phone">
+                    <!---Phone Type--->
+                    <label for="phone-type">Phone Type(optional)</label>
+                    <select id="phone-type" name="phone-type">
+                        <option value="">Select phone type</option>
+                        <option value="home">Home</option>
+                        <option value="work">Work</option>
+                        <option value="mobile">Mobile</option>
+                    </select>
+                    
+                    <!--- Message --->
+                    <label for="Comments">Comments</label>
+                    <textarea id="Comments" name="Comments" rows="5"></textarea>
+
+                    <!---Follow-up-->
+                <fieldset>
+
+                    <legend> Would you like a follow-up?</legend>
+                    <ul class="followup-list">
+                        <li>
+                            <input type="radio" id="followup-yes" name="followup" value="yes" checked = "true">
+                            <label for="followup-yes">Yes</label> 
+                        </li>
+                        <li>
+                            <input type="radio" id="followup-no" name="followup" value="no">
+                            <label for="followup-no">No</label>
+                        </li>
+                    </ul>
+                </fieldset>
+                    <!---Submit--->
+                    <button type="submit">Submit</button>
+                </div>
+                </fieldset>
+            </form>
+        </section>
 
     </main>
 
