@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="navcss" href="css/nav.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
@@ -19,8 +20,22 @@
     <p class="netlify-note">Now on Netlify!</p>
 
     <header>
-        <img src="img/logo-96X96.svg" alt="Blue origami logo">
-        <h1>Web Dev 1</h1>
+        
+        <nav class="navbar">
+            <div class="logo">
+                <img src="img/logo-96X96.svg" alt="Blue origami logo">
+                <h1>Web Dev 1</h1> 
+            </div>
+            <div class="navbar-links">
+            <ul>
+                <li><a href="#Bio">Bio</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#article">Blog</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+            </div>
+         
+        </nav>
     </header>
 
     <main>
@@ -35,7 +50,7 @@
         </section>
 
         <!-- Biography -->
-        <section class="center">
+        <section class="center" id="Bio">
             <h2>Biography</h2>
             <div>
                 <p>I enjoy…</p>
