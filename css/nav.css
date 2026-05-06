@@ -21,6 +21,15 @@ main {
 
 /* navbar */
 
+.navbar {
+    display: flex;
+    flex-direction:column;
+    font-size: 1.5rem;
+    background-color: var(--burgundy);
+    color:white;
+    margin-bottom: 1rem;
+}
+
 
 
 /* logo */
