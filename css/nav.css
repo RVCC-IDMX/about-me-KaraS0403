@@ -28,6 +28,7 @@ main {
     background-color: var(--burgundy);
     color:white;
     margin-bottom: 1rem;
+    padding: 1rem;
 }
 
 
@@ -88,3 +89,15 @@ media query for non-mobile nav bar
 min-width set to width of nav elements 
 such that no text wraps 
 */
+
+@media screen and (min-width: 60rem) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .navbar-links ul {
+        display: flexk;
+        justify-content: space-between;
+    }
+}
