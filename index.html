@@ -1,18 +1,18 @@
-</body>
-</html>
-
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About Me</title>
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/nav.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
 </head>
 
 <body>
@@ -20,21 +20,34 @@
     <p class="netlify-note">Now on Netlify!</p>
 
     <header>
-        
+        <!-- Navigation Bar -->
         <nav class="navbar">
-            <div class="logo">
-                <img src="img/logo-96X96.svg" alt="Blue origami logo">
-                <h1>Web Dev 1</h1> 
+
+            <div class="Newlogo">
+                <img src="img/Newlogo.png" alt="KS monogram logo">
+                <h1>Web Dev 1</h1>
             </div>
+
+            <!-- checkbox FIRST -->
+            <input type="checkbox" id="menu-toggle">
+
+            <!-- hamburger SECOND -->
+            <label for="menu-toggle" class="hamburger" aria-label="Toggle navigation menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
+            <!-- nav links LAST -->
             <div class="navbar-links">
-            <ul>
-                <li><a href="#Bio">Bio</a></li>
-                <li><a href="#gallery">Gallery</a></li>
-                <li><a href="#article">Blog</a></li>
-                <li><a href="#contact">Contact Us</a></li>
-            </ul>
+                <ul>
+                    <li><a href="#bio">Bio</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#article">Blog</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
             </div>
-         
+
         </nav>
     </header>
 
@@ -42,7 +55,7 @@
 
         <!-- Avatar + Name -->
         <section class="center">
-            <img src="img/avataaars.png" alt="My Avatar">
+            <img src="img/avataaars.png" alt="Cartoon avatar of Kara Sutton">
             <div>
                 <p>Kara Sutton</p>
                 <p>Lebanon, NJ</p>
@@ -50,13 +63,18 @@
         </section>
 
         <!-- Biography -->
-        <section class="center" id="Bio">
+        <section class="center" id="bio">
             <h2>Biography</h2>
+            <figure>
+                <img src="img/Screenshot 2026-05-06 204031.jpg" alt="Kara with a friend">
+                <figcaption>One of my best friends and me (I’m on the right!)</figcaption>
+            </figure>
             <div>
-                <p>I enjoy…</p>
-                <p>Reading, beach volleyball, and surprisingly my job.</p>
-                <p>My favorite way to work is…</p>
-                <p>At the library with a friend, my headphones, and some coffee.</p>
+                <p>My name is Kara Sutton, I am 22 years old, and I graduated from Somerville High School, class of 2022. I currently work full-time as a server at Raritan Valley Country Club.</p>
+                <p>My favorite things to do are reading, playing doubles beach volleyball—especially with my mom—and, surprisingly, my job.</p>
+                <p>My favorite way to work is at the library with a friend, my headphones, and some coffee.</p>
+                <p>Some things I value most are my relationships with my family and friends. I’m lucky enough to be rich in both of those areas, so it’s something I really cherish.</p>
+                <p>Although I’m not really one to watch a lot of movies and TV shows, I do have a bunch of comfort shows and movies, such as The 100, Gossip Girl, The Vampire Diaries, The Last Kingdom, Dexter, Big Cat Diary, and most, if not all, Marvel movies.</p>
             </div>
         </section>
 
@@ -64,10 +82,12 @@
         <section class="center" id="hobbies">
             <h2>Hobbies</h2>
             <ul>
-                <li>Skiing</li>
-                <li>Beach Volleyball</li>
-                <li>Shopping</li>
-                <li>Hiking</li>
+                <li>Skiing – ever since my mom taught me when I was 5, I haven’t been able to stop. It’s something I enjoy with my mom and my friends. If there was one place I could ski again, it would be Vail, Colorado.</li>
+                <li>Beach Volleyball – although I don’t and never have played competitively, it is something I have always enjoyed and would love to get more into.</li>
+                <li>Reading – I didn’t always love to read; in fact, I really struggled with it when I was younger. Thanks to my parents and teachers who encouraged me to read and find books that I enjoyed, I have really come to love it. My favorite book series is the Percy Jackson series by Rick Riordan. I have read the whole series multiple times and I am always looking for more books to read that are similar.</li>
+                <li>Shopping – the second I get money I just love to spend it: purses, clothes, shoes, jewelry—you name it, I love it. I have a closet full of purses and shoes and I am always looking for more.</li>
+                <li>Hiking – there are so many great trails to explore!</li>
+                <li>Running – something I never thought I’d list as a hobby, yet recently I’ve really been enjoying it.</li>
             </ul>
         </section>
 
@@ -77,47 +97,85 @@
             <hr>
 
             <figure class="gallery">
-                <img src="img/clouds-640w.jpg" alt="Clouds">
+                <img src="img/clouds-640w.jpg" alt="Clouds over mountains">
                 <figcaption>Best view ever</figcaption>
             </figure>
 
             <figure class="gallery">
-                <img src="img/lift-640w.jpg" alt="Ski Lift">
+                <img src="img/lift-640w.jpg" alt="Ski lift">
                 <figcaption>No wait at all</figcaption>
             </figure>
 
             <figure class="gallery">
-                <img src="img/me-640w.jpg" alt="Me">
+                <img src="img/me-640w.jpg" alt="Kara after skiing">
                 <figcaption>Just a little tired after skiing</figcaption>
             </figure>
         </section>
 
-        <!-- Dracula Excerpt -->
+        <!-- Sprites Blog -->
         <section id="article" class="center">
-            <h2>Dracula by Bram Stoker</h2>
+            <h2>CSS Sprites</h2>
             <div>
-                <p>I am beginning to feel this nocturnal existence tell on me. It is destroying my nerve. I start at my own shadow, and am full of all sorts of horrible imaginings. God knows that there is ground for my terrible fear in this accursed place! I looked out over the beautiful expanse, bathed in soft yellow moonlight till it was almost as light as day.</p>
-                <p>How these papers have been placed in sequence will be made manifest in the reading of them. All needless matters have been eliminated, so that a history almost at variance with the possibilities of later-day belief may stand forth as simple fact. There is throughout no statement of past things wherein memory may err, for all the records chosen are exactly contemporary, given from the standpoints and within the range of knowledge of those who made them.</p>
-                <p>We kept on ascending, with occasional periods of quick descent, but in the main always ascending. Suddenly, I became conscious of the fact that the driver was in the act of pulling up the horses in the courtyard of a vast ruined castle, from whose tall black windows came no ray of light, and whose broken battlements showed a jagged line against the moonlit sky.</p>
+                <p>
+                    CSS sprites are two-dimensional images created by combining multiple smaller graphics, such as icons, 
+                    buttons, symbols, and logos, into a single larger image file. Instead of storing each graphic as a
+                    separate file, sprites place every small image at specific X and Y coordinates within one master 
+                    image. This technique allows developers to display only the portion of the sprite they need by 
+                    shifting the background position in CSS. Although the concept is simple, sprites provide powerful 
+                    performance benefits and remain a widely used optimization strategy in modern web development.
+                    One of the primary advantages of CSS sprites is their impact on page performance. Normally, a web page 
+                    must make an individual HTTP request for every image it loads. When a site uses multiple small graphics, 
+                    such as navigation icons, social media buttons, or interface elements, these requests accumulate quickly. 
+                    Each request adds overhead, increasing load time and slowing down the user experience. By replacing dozens of 
+                    separate image files with one sprite sheet, the browser only needs to download a single file. This dramatically 
+                    reduces the total number of server requests, which directly improves loading speed. Faster loading times are especially 
+                    important for users on slower networks or mobile devices with limited bandwidth. When pages load quickly and consistently, 
+                    users experience smoother navigation and are less likely to leave the site due to delays. Because search engines reward 
+                    fast-loading websites, using CSS sprites can also contribute to improved SEO performance. Additionally, sprites enhance 
+                    visual responsiveness. Since all graphics, including hover states, are already loaded within the same file, interactive
+                    elements appear instantly without waiting for additional images to download. This creates a polished, seamless interface 
+                    that feels more professional and efficient.
+                    Creating your own sprite is straightforward. Any image editing tool can be used
+                    to combine the graphics into one file. PNG is the most common format because it supports transparency and compresses well for
+                    icons and flat color graphics. JPEG can be used for photographic content, but does not support transparency. GIF supports transparency,
+                    but is limited to 256 colors, making it less suitable for modern interfaces. For scalable, resolution-independent graphics, SVG sprites 
+                    are an excellent option, especially for simple icons that need to remain crisp on high-density displays. Once the sprite image is created, 
+                    CSS is used to display only the portion you want. The background-position property controls which part of the sprite is visible. For example, 
+                    the top left corner of the sprite is shown with: <code>background-position: 0 0;</code> If the icon you need is 200px lower in the image, you shift the 
+                    background upward: <code>background-position: 0 -200px;</code> This technique “windows” into the exact section of the sprite you want to reveal. To 
+                    implement sprites efficiently, developers typically begin by creating a reusable base class, often named <code>.sprite</code>, that loads the sprite 
+                    image once. Every icon class then inherits this background image. Next, individual classes are created for each icon. These classes define the 
+                    icon’s width, height, display mode—usually inline-block—and the correct background-position value. By using CSS sprites, developers can display 
+                    only the specific graphic needed, while keeping code efficient, reducing bandwidth usage, and significantly improving overall site performance.
+                </p>
+
+                <h3>Sources</h3>
+                <ul>
+                    <li>W3Schools — <em>CSS Image Sprites</em></li>
+                    <li>Tutorial Republic — <em>How to Create and Use CSS Image Sprites</em></li>
+                    <li>CSS Portal — <em>CSS Sprite Generator</em></li>
+                </ul>
             </div>
         </section>
-        
-        <section id="video">
-                <h2>A Short Video</h2>
-                <figure class="video-wrapper">
-                <iframe 
-                width="560" height="315" 
-                src="https://www.youtube.com/embed/ZYVTl-RzuHQ?si=1Io1GXRnhTH1jBe2" 
-                title="YouTube video player"
-                frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                referrerpolicy="strict-origin-when-cross-origin" 
-                allowfullscreen>
-                </iframe>
 
+        <!-- Video Section -->
+        <section id="video">
+            <h2>A Short Video</h2>
+            <figure class="video-wrapper">
+                <iframe 
+                    width="560" height="315" 
+                    src="https://www.youtube.com/embed/ZYVTl-RzuHQ?si=1Io1GXRnhTH1jBe2" 
+                    title="YouTube video player"
+                    frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen>
+                </iframe>
                 <figcaption>Midterm Website walk-through</figcaption>
-                </figure>
+            </figure>
         </section>
+
+        <!-- Contact Section -->
         <section id="contact">
             <h2>Contact Us:</h2>
             <form id="contactForm" name="contactForm" method="POST" data-netlify="true">
@@ -125,43 +183,47 @@
                     <legend>Contact Form</legend>
 
                     <div id="formElements">
-                        <!--- Name --->
-                        <label for="name">Name(required)</label>
+                        <!-- Name -->
+                        <label for="name">Name (required)</label>
                         <input type="text" id="name" name="name" required>
-                        <!--- Email ---> 
-                        <label for="email">Email(required)</label>
+
+                        <!-- Email -->
+                        <label for="email">Email (required)</label>
                         <input type="email" id="email" name="email" required>
-                        <!--- Phone --->
-                        <label for="phone">Phone(optional)</label>
+
+                        <!-- Phone -->
+                        <label for="phone">Phone (optional)</label>
                         <input type="tel" id="phone" name="phone">
-                        <!---Phone Type--->
-                        <label for="phonetype">Phone Type(optional)</label>
+
+                        <!-- Phone Type -->
+                        <label for="phonetype">Phone Type (optional)</label>
                         <select id="phonetype" name="phonetype">
                             <option value="">Select phone type</option>
                             <option value="home">Home</option>
                             <option value="work">Work</option>
                             <option value="mobile">Mobile</option>
                         </select>
-                        <!--- Message --->
+
+                        <!-- Message -->
                         <label for="message">Message (optional)</label>
-                        <textarea id="message" name="message " rows="5"></textarea>
+                        <textarea id="message" name="message" rows="5"></textarea>
 
-                        <!---Follow-up-->
+                        <!-- Follow-up -->
                         <fieldset>
-
-                            <legend> Would you like a reply?</legend>
-                            <ul >
+                            <legend>Would you like a reply?</legend>
+                            <ul>
                                 <li>
-                                    <input type="radio" id="message-yes" name="reply" value="yes" checked = "true">
-                                    <label for="message-yes">Yes a reply would be nice.</label> 
+                                    <input type="radio" id="message-yes" name="reply" value="yes" checked>
+                                    <label for="message-yes">Yes, a reply would be nice.</label> 
                                 </li>
                                 <li>
                                     <input type="radio" id="message-no" name="reply" value="no">
-                                    <label for="message-no">No, thanks</label>
+                                    <label for="message-no">No, thanks.</label>
                                 </li>
                             </ul>
                         </fieldset>
-                        <!---Submit--->
+
+                        <!-- Submit -->
                         <button type="submit">Submit</button>
                     </div>
                 </fieldset>
@@ -173,11 +235,11 @@
     <footer>
         <p>Created by Kara Sutton</p>
         <p>© 2026</p>
+        <p>
+            <a href="https://github.com/KaraS0403/about-me" target="_blank">View GitHub Repository</a>
+        </p>
     </footer>
 
 </body>
 </html>
-
-
-
 

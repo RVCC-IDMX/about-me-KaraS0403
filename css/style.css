@@ -5,23 +5,25 @@
 }
 
 /* Global */
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: "Cormorant Garamond", serif;
     background-color: #af7290b2; /* soft blush */
 }
 
-/* Header */
-header {
-    background-color: var(--pink);
-    color: white;
-    padding: 2rem;
-    text-align: center;
-}
-
-/* Main */
+/* Layout */
 main {
     padding: 1.5rem;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+section {
+    margin-bottom: 3rem;
 }
 
 /* Links */
@@ -43,18 +45,28 @@ footer {
     margin-top: 2rem;
     font-size: 0.9rem;
 }
+
+footer a {
+    color: #ffd6ec;
+}
+
+footer a:hover {
+    color: white;
+}
+
 /* Paragraphs */
 p {
-    color:#55062C;
-    font-weight: bold;
+    color: var(--burgundy);
+    font-weight: 500;
+    line-height: 1.5;
 }
 
 /* Headings */
 h2 {
     margin: auto;
     color: var(--pink-dark);
-    font-size: xx-large ;
-    font-family:ui-sans-serif;
+    font-size: xx-large;
+    font-family: ui-sans-serif;
 }
 
 /* Centering utility */
@@ -67,167 +79,190 @@ main section img {
     margin: 0 auto;
 }
 
-/* First hobby styling */
+/* Biography */
+section#bio img {
+    max-width: 100%;
+    height: auto;
+}
+
+#bio figure {
+    text-align: center;
+    border: 8px solid var(--burgundy);
+    padding: 1px;
+    margin: 25px auto;
+    max-width: fit-content;
+}
+
+#bio figure figcaption {
+    font-style: italic;
+    color: var(--burgundy);
+    font-weight: bold;
+}
+
+/* Hobbies */
 section#hobbies {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-    #hobbies ul{
-        list-style-position: inside;
-        padding: 0;
-        color:#55062C;
-        font-weight: bold;
-    }
 
-/* Images */
+#hobbies ul {
+    list-style-position: inside;
+    padding: 0;
+    color: var(--burgundy);
+    font-weight: bold;
+}
+
+/* Gallery */
 section#gallery {
     max-width: 100%;
     height: auto;
 }
 
-    /* Figures */
-    #gallery figure {
-        text-align: center;
-        border: 8px solid var(--burgundy);
-        padding: 1px;
-        margin: 25px auto;
-        max-width: fit-content;
-    }
-    /* Figure captions */
-    #gallery figure figcaption{
-        font-style: italic;
-        color: var(--burgundy);
-        font-weight: bold;
-    }
+#gallery figure {
+    text-align: center;
+    border: 8px solid var(--burgundy);
+    padding: 1px;
+    margin: 25px auto;
+    max-width: fit-content;
+}
 
+#gallery figure figcaption {
+    font-style: italic;
+    color: var(--burgundy);
+    font-weight: bold;
+}
+
+/* Gallery hover effect */
+#gallery img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+}
 
 /* Article block */
 section#article {
-    background-color: var(--pink);
+    background-color: #c40f63; /* deeper pink for better contrast */
     padding: 1rem;
-    border-radius: 1px;
+    border-radius: 4px;
     margin-bottom: 1.5rem;
-    line-height: 1.25rem;
+    line-height: 1.5;
     font-family: 'Times New Roman', Times, serif;
 }
 
-    /* Article text + heading */
-    #article div {
-        margin-bottom: 1rem;
-        color: white;
-        margin-top: 1rem;
-    }
-
-    #article h2 {
-        color: white;
-    }
-
-    /*video styling*/
-  .video {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 2rem auto;
-    padding: 1rem;
+#article div {
+    margin-bottom: 1rem;
+    color: white;
+    margin-top: 1rem;
 }
 
+#article h2 {
+    color: white;
+}
+
+/* Video styling */
 .video-wrapper {
     width: 100%;
     max-width: 800px;
     aspect-ratio: 16 / 9;
     position: relative;
+    margin: 0 auto;
 }
 
 .video-wrapper iframe {
     width: 100%;
     height: 100%;
-    border: 5px solid #55062C;
+    border: 5px solid var(--burgundy);
     border-radius: 8px;
 }
 
 .video-wrapper figcaption {
     text-align: center;
     margin-top: 0.5rem;
-    color: #55062C;
+    color: var(--burgundy);
     font-size: 0.9rem;
 }
-/*contact Form*/
 
-    #formElements{
-        display:grid;
-        row-gap: .5em;
-    }
-    #contact{
-        padding: 1rem;
-        max-width: 600px;
-        margin: 2rem auto;
-    }
-    fieldset{
-        border: 2px solid var(--burgundy);
-        margin-top: 1rem;
-        margin-bottom: 1rem;
-        border-radius: 5px;
-    }
-    #contact input, #contact textarea, #contact select, #contact button{
-        padding: .5em;
-        font-size: 1rem;
-    }
-    #contact h2{
-        text-align: center;
-    }
-    legend{
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: var(--pink-dark);
-    }
-    #contact label{
-        color: var(--burgundy);
-        font-weight: bold;
-    }
-    #contact div{
-        color: var(--burgundy)
-    }
-    #contact ul{
-        list-style: none;
-        padding: 0;
-    }
-    #contact li{
-        margin:1rem;
-    }
-    #contact button{
-        background-color: var(--pink);
-        color: white;
-        border: none;
-        padding: 0.5rem 1rem;
-        cursor: pointer;
-    }
-
-/*responsive design*/
-@media screen and (min-width: 60em){
-    #gallery figure {
-        display: grid;
-        grid-template-columns: 2fr, 1fr;
-        
-    }
-    #gallery figure figcaption{
-        display:flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 3rem; 
-        margin-left: 1rem;
-    }
-
+/* Contact Form */
+#contact {
+    padding: 1rem;
+    max-width: 600px;
+    margin: 2rem auto;
 }
-/* Small screens */
+
+#formElements {
+    display: grid;
+    row-gap: 0.5em;
+}
+
+fieldset {
+    border: 2px solid var(--burgundy);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 5px;
+}
+
+#contact input,
+#contact textarea,
+#contact select,
+#contact button {
+    padding: 0.5em;
+    font-size: 1rem;
+}
+
+#contact h2 {
+    text-align: center;
+}
+
+legend {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: var(--pink-dark);
+}
+
+#contact label {
+    color: var(--burgundy);
+    font-weight: bold;
+}
+
+#contact div {
+    color: var(--burgundy);
+}
+
+#contact ul {
+    list-style: none;
+    padding: 0;
+}
+
+#contact li {
+    margin: 1rem;
+}
+
+#contact button {
+    background-color: var(--pink);
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+#contact button:hover {
+    background-color: var(--pink-dark);
+    transform: scale(1.05);
+}
+
+/* Responsive design */
+
+/* Small & medium screens */
 @media screen and (max-width: 60em) {
     #gallery figure {
         display: grid;
-        grid-template-columns: 2fr, 1fr;
-    }
-    img{
-        width: 100%;
-        height: auto;
+        grid-template-columns: 2fr 1fr;
     }
 
     #gallery figure figcaption {
@@ -235,17 +270,15 @@ section#article {
         justify-content: center;
         align-items: center;
         font-size: 1.5rem;
-        margin-left: .5rem;
+        margin-left: 0.5rem;
     }
 }
-
-
 
 /* Large screens */
 @media screen and (min-width: 60em) {
     #gallery figure {
         display: grid;
-        grid-template-columns: 2fr, 1fr;
+        grid-template-columns: 2fr 1fr;
     }
 
     #gallery figure figcaption {
@@ -256,4 +289,3 @@ section#article {
         margin-left: 1rem;
     }
 }
-

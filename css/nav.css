@@ -1,73 +1,63 @@
-/* make scrolling smooth */
-
+/* Smooth scrolling */
 html {
     scroll-behavior: smooth;
 }
 
-/* 
- get rid of padding & sizing on body so
- header is at top
-*/
+/* Reset body for header alignment */
 body {
     padding: 0;
     box-sizing: border-box;
     margin: 0;
 }
 
-/* add some padding back to rest of page */
+/* Add some padding back to rest of page */
 main {
     padding: 2vw;
 }
 
-/* navbar */
-
+/* Navbar */
 .navbar {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     font-size: 1.5rem;
     background-color: var(--burgundy);
-    color:white;
+    color: white;
     margin-bottom: 1rem;
     padding: 1rem;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
 
-
-
-/* logo */
-
-.logo{
+/* Logo */
+.logo,
+.Newlogo {
     display: flex;
     align-items: center;
-
+    gap: 0.75rem;
 }
 
-.logo img {
-    height: 6vw;
-    width: 6vw;
+.logo img,
+.Newlogo img {
+    height: clamp(40px, 6vw, 70px);
+    width: clamp(40px, 6vw, 70px);
 }
 
-.logo h1{
+.logo h1,
+.Newlogo h1 {
     font-size: 1.5rem;
 }
-/* navigation list */
 
+/* Navigation list */
 .navbar-links li {
     list-style: none;
     display: block;
     padding: 0.5em 0;
-   
 }
 
-
-
-/*  
- style all a tags in header 
- and then on hover
-*/
+/* Nav links */
 .navbar-links a {
     color: white;
     background-color: var(--burgundy);
-    font-size:1.5 rem;
+    font-size: 1.5rem;
     padding: 1rem 1.25rem;
     letter-spacing: 2px;
     text-decoration: none;
@@ -76,28 +66,70 @@ main {
 
 .navbar-links a:hover,
 .navbar-links a:focus {
-    filter:invert(1);
-    border-radius:10px;
-    outline:none;
+    border-radius: 10px;
+    outline: none;
     background-color: var(--pink);
     color: white;
 }
 
+/* Hamburger */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 6px;
+    cursor: pointer;
+}
 
-/* 
-media query for non-mobile nav bar
-min-width set to width of nav elements 
-such that no text wraps 
-*/
+.hamburger span {
+    width: 30px;
+    height: 4px;
+    background-color: white;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
 
+.hamburger:hover span {
+    background-color: var(--pink);
+}
+
+/* Checkbox for CSS-only hamburger */
+#menu-toggle {
+    display: none;
+}
+
+/* When checked, show menu */
+#menu-toggle:checked ~ .navbar-links {
+    display: flex;
+}
+
+/* MOBILE */
+@media screen and (max-width: 60rem) {
+    .hamburger {
+        display: flex;
+    }
+
+    .navbar-links {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        padding-top: 1rem;
+    }
+}
+
+/* DESKTOP */
 @media screen and (min-width: 60rem) {
     .navbar {
         flex-direction: row;
         justify-content: space-between;
+        align-items: center;
     }
-    
+
     .navbar-links ul {
-        display: flexk;
-        justify-content: space-between;
+        display: flex;
+        gap: 1.5rem;
+    }
+
+    .hamburger {
+        display: none;
     }
 }
